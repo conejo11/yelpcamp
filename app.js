@@ -136,6 +136,7 @@ app.use((err, req, res, next) => {
 });
 
 // telling express to listen to the port 3000
-app.listen(3000, () => {
+const port = process.env.PORT || 3000
+app.listen(port, () => {
     console.log('Connected to port 3000!')
 });
